@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap");
+
+root{
+    --font-family: "Poppins", sans-serif;
+    --bg-color: #011d2d;
+    --bg-color-2: transparent;
+    --font-color: #ffffff;
+    --button-color: #006eb2;
+    --second-color: #b00064;
+    --hover-color: #0299f6;
+    --hover-color-x: #fa2cb2;
+    --header-padding: 20px 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--header-padding);
+    background: var(--bg-color-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
