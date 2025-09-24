@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEON CURSOR</title>
+    <link rel="stylesheet" href="cursorCss.css">
+</head>
+<body>
+   <div class="coursor"></div>
+
+   <script type="text/javascript">
+       const cursor = document.querySelector(".coursor");
+       var timeout;
+
+       //Suivre la souris...
+       document.addEventListener("mousemove", (e) => {
+          let x = e.pageX;
+          let y = e.pageY;
+
+          cursor.style.top = y + "px";
+          cursor.style.left = x + "px";
+           cursor.style.display = "block";
+
+           //Effets de curseur quand on clique...
+           function mouseStopped() {
+               cursor.style.display = "none";
+           }
+           clearTimeout(timeout);
+           timeout = setTimeout(mouseStopped, 1000);
+       });
+
+
+       //courseur hors d'ecran...
+       document.addEventListener("mouseout", () => {
+          cursor.style.display = "none";
+       });
+   </script>
+</body>
+</html>
