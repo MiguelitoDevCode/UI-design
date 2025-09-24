@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIGUELITO DevCode</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CssStyles2.css">
+</head>
+<body>
+
+     <header class="header">
+         <nav class="navbar">
+             <a href="#">Acceuil</a>
+             <a href="#">A Propos</a>
+             <a href="#">Services</a>
+             <a href="#">Contacts</a>
+             <a href="#"></a>
+             <a href="#"></a>
+             <a href="#"></a>
+             <a href="#" id="btnLog" onclick="Login()"><b>CONNEXION</b></a>
+             <a href="#" id="btnReg" onclick="Register()"><b>INSCRIPTION</b></a>
+         </nav>
+
+         <form action="#" class="search-bar">
+             <input type="search" name="search-bar" placeholder="Rechercher...">
+             <button type="submit"><i><img src="Images/search.png" style="width: 15px; height: 15px" alt=""></i></button>
+         </form>
+     </header>
+
+     <div class="background"></div>
+     <div class="container">
+         <div class="content">
+             <h2 class="logo"><i><img src="Images/ico.png" style="width: 50px; height: 40px" alt=""></i>MigDevCode.</h2>
+             <div class="text-sci">
+                 <h2>Bienvenue !<br><span>Sur Notre Nouvelle Plateforme.</span></h2>
+
+                 <p>Lorem ipsum dolor sit amet
+                     consectetur impal adipisicing elit.<br>
+                     Alias assumenda dolorum doloremque sapiente aliquid aperiam.
+                 </p>
+
+                 <div class="social-icons">
+                     <a href="#"><i><img src="Images/twitter.png" alt=""></i></a>
+                     <a href="#"><i><img src="Images/facebook.png" alt=""></i></a>
+                     <a href="#"><i><img src="Images/instagram.png" alt=""></i></a>
+                     <a href="#"><i><img src="Images/whatsapp.png" alt=""></i></a>
+                 </div>
+             </div>
+         </div>
+
+         <div class="logreg-box">
+             <div class="form-box login" id="login">
+                 <form action="#">
+                     <h2>Connexion</h2>
+
+                     <div class="input-box">
+                         <span class="icon"><i><img src="Images/contact.png" alt=""></i></span>
+                         <input type="email" required="required">
+                         <label>Email</label>
+                     </div>
+                     <div class="input-box">
+                         <span class="icon"><i><img src="Images/lock.png" alt=""></i></span>
+                         <input type="password" maxlength="18" required="required">
+                         <label>Mot De Passe</label>
+                     </div>
+                     <div class="remember-forgot">
+                         <label><input type="checkbox"> Se Souvenir De Moi</label>
+                         <a href="#">Mot de passe oubli&eacute;?</a>
+                     </div>
+                     <button type="submit" class="btn">Connexion</button>
+
+                 </form>
+             </div>
+
+             <div class="form-box register" id="register">
+                 <form action="#" >
+                     <h2>Inscription</h2>
+
+                     <div class="input-box">
+                         <span class="icon"><i><img src="Images/sellico.png" alt=""></i></span>
+                         <input type="text" required="required">
+                         <label>Noms</label>
+                     </div>
+                     <div class="input-box">
+                         <span class="icon"><i><img src="Images/contact.png" alt=""></i></span>
+                         <input type="email" required="required">
+                         <label>Email</label>
+                     </div>
+                     <div class="input-box">
+                         <span class="icon"><i><img src="Images/lock.png" alt=""></i></span>
+                         <input type="password" maxlength="18" required="required">
+                         <label>Mot De Passe</label>
+                     </div>
+                     <div class="remember-forgot">
+                         <label><input type="checkbox"> J'accepte les termes et conditions</label>
+                     </div>
+                     <button type="submit" class="btn">S'Inscrire</button>
+
+                 </form>
+             </div>
+         </div>
+     </div>
+
+
+    <script src="appJs.js"></script>
+</body>
+</html>
