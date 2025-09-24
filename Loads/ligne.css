@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+section .loader
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+section .load
+{
+    font-family: Georgia, sans-serif;
+    background: none;
+    color: white;
+    position: absolute;
+    align-items: center;
+}
+
+section .loader span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(calc(100% * var(--i)));
+    animation: anim 0.7s linear infinite;
+}
+
+@keyframes anim {
+    0%
+    {
+        transform: translateX(0%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+section .loader span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: violet;
+    box-shadow: 0 0 10px palevioletred,
+    0 0 20px blueviolet,
+    0 0 40px darkviolet,
+    0 0 60px darkviolet,
+    0 0 80px darkviolet,
+    0 0 100px indigo;
+    animation: animate 0.2s linear infinite;
+    animation-delay: calc(0.01s * var(--i));
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: scale(1);
+    }
+    80%,100%
+    {
+        transform: scale(0);
+    }
+}
