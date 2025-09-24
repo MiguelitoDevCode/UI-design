@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http_cdn.jsdelivr.net_npm_swiper@11_swiper-bundle.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/Car-Logo-PNG-Image.png" type="image/x-icon" />
+    <title>Location De Voitures</title>
+  </head>
+  <body>
+    <header>
+
+      <!--Barre de navigation-->
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <img src="assets/Car-Logo-PNG-Image.png" alt="logo" class="logo-white" />
+              <img src="assets/Car-Logo-PNG-Image.png" alt="logo" class="logo-dark" />
+              <span>CarZ Location</span>
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#deals">Locations</a></li>
+            <li><a href="#choose">Pourquoi Nous</a></li>
+            <li><a href="#client">Testimonials</a></li>
+            <li><a href="#">S'inscrire</a></li>
+          </ul>
+        <div class="nav__btns">
+          <button class="btn" id="locat"><a href="#subscribe" class="lii">Location</a></button>
+        </div>
+      </nav>
+
+      <!--Presentation-->
+      <div class="header__container" id="home">
+        <div class="header__image">
+          <img src="assets/01249.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h2>👍 Une plateforme de location auto 100% made in Cameroon</h2>
+          <h1>LOCATION FACILE ET RAPIDE</h1>
+          <p class="section__description">
+            Decouvrez une experience toute nouvelle de la location automoblile en ligne. Vous avez le
+            choix sur une large gamme de vehicules selon vos envies et votre budget.
+            Venez decouvrir ce qui se fait de mieux en matiere de voiture!
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!--Derniere location-->
+    <section class="header__form">
+      <form action="/">
+        <div class="input__group">
+          <label for="location">Louer et retouner</label>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Douala, Cameroun"
+          />
+        </div>
+        <div class="input__group">
+          <label for="start">Date de location</label>
+          <input
+            type="text"
+            name="start"
+            id="start"
+            placeholder="Jan 01, 00:00"
+          />
+        </div>
+        <div class="input__group">
+          <label for="stop">Date de retour</label>
+          <input
+            type="text"
+            name="stop"
+            id="stop"
+            placeholder="Jan 01, 00:00"
+          />
+        </div>
+        <button class="btn">Recherche <i class="ri-search-line"></i></button>
+      </form>
+    </section>
+
+   <!--A propos-->
+    <section class="section__container about__container" id="about">
+      <h2 class="section__header">Que Faisons-Nous ?</h2>
+      <p class="section__description">
+        Obtenir un vehicule chez nous, c'est simple ! Choisissez votre vehicle, votre situation geographique, une date de location,
+        une date de retour et finalisez votre commade. Enfin, profitez de votre vehicule!!!
+      </p>
+      <div class="about__grid">
+        <div class="about__card">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+          <h4>Localisation</h4>
+          <p>
+            Selectionnez le lieu où vous vous trouvez!!!
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-calendar-event-fill"></i></span>
+          <h4>Date de location</h4>
+          <p>
+            Choisissez une date qui vous convient!!!
+          </p>
+        </div>
+        <div class="about__card">
+          <span><i class="ri-roadster-fill"></i></span>
+          <h4>Catalogue</h4>
+          <p>
+            Choisissez une voiture dans notre catalogue!!!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Locations-->
+    <section class="deals" id="deals">
+      <div class="section__container deals__container">
+        <h2 class="section__header">Nos Vehicules de Location Populaires</h2>
+        <p class="section__description">
+          Explorez notre de vehicules les plus populaires, offrez-vous une experiences de conduite ideale.
+          Qu'attendez-vous ? Faites votre choix !
+        </p>
+        <div class="deals__tabs">
+          <button class="btn active" data-id="Tesla">Toyota</button>
+          <button class="btn" data-id="Mitsubishi">Mitsubishi</button>
+          <button class="btn" data-id="Mazda">Mazda</button>
+          <button class="btn" data-id="Toyota">Ford</button>
+          <button class="btn" data-id="Honda">Honda</button>
+        </div>
+        <div id="Tesla" class="tab__content active">
+          <div class="deals__card">
+            <img src="assets/listing_main_2020_corolla_logo.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Toyota Corolla</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>25000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/E-yKCSvXoAMS2tB.jpg" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(450)</span>
+            </div>
+            <h4>Toyota Hilux</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>35000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/images%20(3).png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Toyota RAV4</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Autopilot
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 400km
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Ergonomic
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>20000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Mitsubishi" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-4.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(350)</span>
+            </div>
+            <h4>Mirage</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>30000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-5.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(250)</span>
+            </div>
+            <h4>Xpander</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>40000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-6.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(150)</span>
+            </div>
+            <h4>Pajero Sports</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>35000<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Mazda" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-7.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(200)</span>
+            </div>
+            <h4>Mazda CX5</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>23000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-8.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(100)</span>
+            </div>
+            <h4>Mazda CX-30</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>45000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-9.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(180)</span>
+            </div>
+            <h4>Mazda CX-9</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>40000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Toyota" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/ford-fiesta.jpg" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(250)</span>
+            </div>
+            <h4>Ford Fiesta</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>33000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/ford-focus.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(550)</span>
+            </div>
+            <h4>Ford Focus</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>42000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/ford-ranger.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(180)</span>
+            </div>
+            <h4>Ford Ranger</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>48000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="Honda" class="tab__content">
+          <div class="deals__card">
+            <img src="assets/deals-13.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(200)</span>
+            </div>
+            <h4>Amaze</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>20000 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-14.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(350)</span>
+            </div>
+            <h4>Elevate</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>22500 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="deals__card">
+            <img src="assets/deals-15.png" alt="deals" />
+            <div class="deals__rating">
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-fill"></i></span>
+              <span><i class="ri-star-line"></i></span>
+              <span>(300)</span>
+            </div>
+            <h4>City</h4>
+            <div class="deals__card__grid">
+              <div>
+                <span><i class="ri-group-line"></i></span> 4 People
+              </div>
+              <div>
+                <span><i class="ri-steering-2-line"></i></span> Manual
+              </div>
+              <div>
+                <span><i class="ri-speed-up-line"></i></span> 18km/l
+              </div>
+              <div>
+                <span><i class="ri-car-line"></i></span> Diesel
+              </div>
+            </div>
+            <hr />
+            <div class="deals__card__footer">
+              <h3>32300 Fcfa<span>/Per Day</span></h3>
+              <a href="#">
+                Louer
+                <span><i class="ri-arrow-right-line"></i></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--– Pourquoi Nous--->
+    <section class="choose__container" id="choose">
+      <div class="choose__image">
+        <img src="assets/quelle-voiture-choisir-quand-on-est-grand.png" alt="choose" />
+      </div>
+      <div class="choose__content">
+        <h2 class="section__header">Pourquoi Nous Choisir ?</h2>
+        <p class="section__description">
+          Decouvrez la difference entre nos services et ailleurs. Nous offrons des
+          vehicles à la portee de toutes les poches, un service exceptionnel, et un suivi de A-Z sur vos locations.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-customer-service-line"></i></span>
+            <div>
+              <h4>Service Client</h4>
+              <p>Notre service d'assistance 24h/24 et 7j/7.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div>
+              <h4>Toutes Nos Locations</h4>
+              <p>
+                Nos vehicules a votre disposition.
+              </p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-wallet-line"></i></span>
+            <div>
+              <h4>Prix Imbattables</h4>
+              <p>Appreciez nos prix defiant toute concurrence.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-user-star-line"></i></span>
+            <div>
+              <h4>Experience Conducteur</h4>
+              <p>Testez vos choix avant de valider une location.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-verified-badge-line"></i></span>
+            <div>
+              <h4>Assurance Qualite</h4>
+              <p>Nos vehicules sont valides selon les normes internationales.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-calendar-close-line"></i></span>
+            <div>
+              <h4>Annulation Gratuite</h4>
+              <p>Vous pouvez annuler une location quand vous voulez.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---Inscription-->
+    <section class="subscribe__container" id="subscribe">
+      <div class="subscribe__image">
+        <img src="assets/subscribe.png" alt="subscribe" />
+      </div>
+      <div class="subscribe__content">
+        <h2 class="section__header">
+          Faites une location en ligne en un CLic!!!
+        </h2>
+        <p class="section__description">
+          Cliquez juste ici.
+        </p>
+        <form action="/" id="Loca">
+          <button class="btn">Location</button>
+        </form>
+      </div>
+    </section>
+
+    <!---Commentaires--->
+    <section class="section__container client__container" id="client">
+      <h2 class="section__header">Que Dit-On Sur Nous?</h2>
+      <p class="section__description">
+        Decouvrez ce que nos utilisateurs pensent de nos services.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-1.jpg" alt="client" />
+                <div>
+                  <h4>Sarah Johnson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                I had an amazing experience renting a car from this service. The
+                booking process was quick and easy, and the car was in perfect
+                condition. Highly recommend!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-2.jpg" alt="client" />
+                <div>
+                  <h4>Michael Adams</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Customer support was excellent! They helped me with all my
+                questions, and I felt confident about my booking. I will
+                definitely rent from them again.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-3.jpg" alt="client" />
+                <div>
+                  <h4>Emily Martinez</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                Affordable prices and great selection of vehicles! I found
+                exactly what I needed, and the pick-up and drop-off process was
+                seamless. Very happy with my rental.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-4.jpg" alt="client" />
+                <div>
+                  <h4>Jason Lee</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The flexibility of free cancellations made my trip stress-free.
+                I ended up changing my plans, and it was no hassle to adjust my
+                booking. Great service overall!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__details">
+                <img src="assets/client-5.jpg" alt="client" />
+                <div>
+                  <h4>David Thompson</h4>
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-line"></i></span>
+                  </div>
+                </div>
+              </div>
+              <p>
+                The car I rented was top-notch, and the driver was very
+                experienced. It made my road trip so much more enjoyable. Will
+                use them again next time!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">
+              <img src="assets/Car-Logo-PNG-Image1.png" alt="logo" />
+              <span>CarZ Location</span>
+            </a>
+          </div>
+          <p>
+            Nous vous offrons un service de qualit&eacute; et des v&eacute;hicules tendances.
+            Faites vos locations chez nous dès maintenant!
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i><img src="assets/facebook.png" alt=""></i></a>
+            </li>
+            <li>
+              <a href="#"><i><img src="assets/twitter.png" alt=""></i></a>
+            </li>
+            <li>
+              <a href="#"><i><img src="assets/instagram.png" alt=""></i></a>
+            </li>
+            <li>
+              <a href="#"><i><img src="assets/whatsapp.png" alt=""></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nos Services</h4>
+          <ul class="footer__links">
+            <li><a href="#home">Acceuil</a></li>
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#deals">Locations</a></li>
+            <li><a href="#choose">Pourquoi Nous</a></li>
+            <li><a href="#client">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Nos Modeles</h4>
+          <ul class="footer__links">
+            <li><a href="#">Toyota Corolla</a></li>
+            <li><a href="#">Toyota Noah</a></li>
+            <li><a href="#">Toyota Allion</a></li>
+            <li><a href="#">Toyota Premio</a></li>
+            <li><a href="#">Mistubishi Pajero</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacts</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +237 680666790
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-fill"></i></span> Douala, Cameroun
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-mail-fill"></i></span> info@carzlocation
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 MIGUELITO DevCode. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="scrollreveal.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
