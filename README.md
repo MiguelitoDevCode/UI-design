@@ -16,7 +16,6 @@
 - [🎯 À Propos](#-à-propos)
 - [🚀 Projets Inclus](#-projets-inclus)
 - [🛠️ Technologies Utilisées](#️-technologies-utilisées)
-- [📁 Structure du Projet](#-structure-du-projet)
 - [🔧 Installation](#-installation)
 - [💡 Utilisation](#-utilisation)
 - [✨ Fonctionnalités](#-fonctionnalités)
@@ -101,24 +100,6 @@ Bienvenue dans mon univers créatif ! Ce dépôt rassemble l'ensemble de mes cr�
 - 🌟 **Modern CSS Features** - Custom Properties, Clamp, etc.
 
 ---
-
-## 📁 Structure du Projet
-
-```
-UI-design/
-├── 📂 portfolios/          # Portfolios simples
-├── 📂 dashboards/          # Dashboards administrateurs
-├── 📂 sites-vitrines/      # Sites de présentation
-├── 📂 landing-pages/       # Pages d'atterrissage
-├── 📂 e-commerce/          # Solutions e-commerce
-├── 📂 animations/          # Animations CSS/JS
-├── 📂 loadings/            # Indicateurs de chargement
-├── 📂 effets-3d/           # Effets tridimensionnels
-├── 📂 backgrounds-animes/  # Arrière-plans animés
-└── 📂 assets/              # Ressources communes
-    ├── 🎨 css/             # Styles globaux
-    ├── 🖼️ images/          # Images et icônes
-    └── ⚡ js/              # Scripts utilitaires
 ```
 
 ---
@@ -151,7 +132,7 @@ npx live-server
 
 ### **Navigation**
 1. 📂 Parcourez les dossiers par catégorie
-2. 🌐 Ouvrez les fichiers `index.html` de chaque projet
+2. 🌐 Ouvrez les fichiers `.html` de chaque projet
 3. 🔍 Explorez le code source pour comprendre l'implémentation
 4. 🎨 Personnalisez selon vos besoins
 
