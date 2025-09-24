@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== ICON ===============-->
+      <link rel="shortcut icon" href="assets/img/faviconX.png" type="image/x-icon">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="style.css">
+
+      <title>WebBibliotheque Design</title>
+   </head>
+   <body>
+      <section class="header">
+         <!-----Barre de navigation------>
+         <nav>
+            <a href="#" class="icon"><img src="assets/img/faviconX.png" alt="" style="width: 130px; height: 130px"></a>
+            <div class="nav-links">
+               <ul>
+                  <li><a href="#home">ACCEUIL</a></li>
+                  <li><a href="#featured">CATALOGUES</a></li>
+                  <li><a href="#product">BIBLIO</a></li>
+                  <li><a href="#categories">CONTACT</a></li>
+                  <li><a href="#writer">A PROPOS</a></li>
+               </ul>
+            </div>
+         </nav>
+
+         <div class="text-box">
+            <h1>Bienvenue Dans Votre Webliotheque</h1>
+            <p>Ici vous disposez d'une variété de chef-œuvres littéraires.
+            Nos livres en lignes sont pour tous les gouts!!!
+            </p>
+            <a href="#" class="visit-btn">Visitez Nous Pour En Savoir Plus</a>
+
+            <div class="connexion">
+               <h1 class="conTitle">Connexion</h1>
+               <label>Email</label>
+               <input type="text" placeholder="Email" class="conInput">
+               <label>Mot de Passe</label>
+               <input type="password" placeholder="Mot de Passe" class="conInput" maxlength="12">
+               <button class="conButton">Se Connecter</button>
+               <span class="insSpan">Vous n'avez pas de compte?<a class="insLink" href="#" onclick="inscript()">  Cr&eacute;er un compte</a></span>
+               <span class="close">X</span>
+            </div>
+
+            <div class="inscrire">
+               <h1 class="insTitle">Inscription</h1>
+               <label>Noms et Prenoms</label>
+               <input type="text" placeholder="Noms & Prenoms" class="insInput">
+               <label>Email</label>
+               <input type="text" placeholder="Email" class="insInput">
+               <label>Mot de Passe</label>
+               <input type="password" placeholder="Mot de Passe" class="insInput" maxlength="12">
+               <button class="insButton">S'Inscrire</button>
+               <span class="conSpan">Vous avez d&eacute;j&agrave; un compte?<a class="conLink" href="#" onclick="connect()">  Se Connecter</a></span>
+               <span class="closed">X</span>
+            </div>
+
+         </div>
+
+      </section>
+
+      <div class="scroll-reveal">
+
+      </div>
+
+      <!-------------Categories---------------->
+      <section class="livres">
+         <h1>Nos Catégories</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+         <div class="row">
+            <div class="column">
+               <img src="assets/img/litterature.jpg" alt="">
+               <h3>Littérature Classique</h3>
+               <p>Lorem ipsum dolor sit amet
+                  consectetur impal adipisicing elit.
+                  Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+            </div>
+
+            <div class="column">
+               <img src="assets/img/contes.jpg" alt="">
+               <h3>Contes & Légendes Africaines</h3>
+               <p>Lorem ipsum dolor sit amet
+                  consectetur impal adipisicing elit.
+                  Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+            </div>
+
+            <div class="column">
+               <img src="assets/img/science.jpg" alt="">
+               <h3>Revues</h3>
+               <p>Lorem ipsum dolor sit amet
+                  consectetur impal adipisicing elit.
+                  Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+            </div>
+         </div>
+      </section>
+
+      <!-------------Chefs d'Oeuvres--------------->
+      <section class="oeuvres">
+         <h1>Nos Œuvres</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+         <div class="row">
+            <div class="column-img">
+               <img src="assets/img/livre.jpg" alt="">
+               <div class="overlay">
+                  <h3>La Défense Populaire Au Cameroun</h3>
+               </div>
+            </div>
+
+            <div class="column-img">
+               <img src="assets/img/livre-1.jpg" alt="">
+               <div class="overlay">
+                  <h3>Où Sont Passés Les Ravisseurs</h3>
+               </div>
+            </div>
+
+            <div class="column-img">
+               <img src="assets/img/livre-2.jpg" alt="">
+               <div class="overlay">
+                  <h3>Ngum a Jémea</h3>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!------------Livres pour enfants------------->
+      <section class="enfants">
+         <h1>Nos Livres Pour Enfant</h1>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+         <div class="row">
+            <div class="enfants-img">
+               <img src="assets/img/enfants.jpg" alt="">
+               <div class="descript">
+                  <h3>Contines et fables</h3>
+                  <p>Lorem ipsum dolor sit amet
+                     consectetur impal adipisicing elit.
+                     Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+               </div>
+            </div>
+
+            <div class="enfants-img">
+               <img src="assets/img/enfant-1.jpg" alt="">
+               <div class="descript">
+                  <h3>Histoires</h3>
+                  <p>Lorem ipsum dolor sit amet
+                     consectetur impal adipisicing elit.
+                     Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+               </div>
+            </div>
+
+            <div class="enfants-img">
+               <img src="assets/img/enfant-2.jpg" alt="">
+               <div class="descript">
+                  <h3>Livres Educatifs</h3>
+                  <p>Lorem ipsum dolor sit amet
+                     consectetur impal adipisicing elit.
+                     Alias assumenda dolorum doloremque sapiente aliquid aperiam.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src=""></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
