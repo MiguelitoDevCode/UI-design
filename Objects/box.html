@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box3D</title>
+    <link rel="stylesheet" href="sbox.css">
+</head>
+<body>
+  <div class="cube">
+      <div>
+          <div class="top"></div>
+          <span style="--i:1;"></span>
+          <span style="--i:2;"></span>
+          <span style="--i:3;"></span>
+          <span style="--i:4;"></span>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+      const cursor = document.querySelector(".cube");
+
+      //Suivre la souris...
+      document.addEventListener("mousemove", (e) => {
+          let x = e.pageX;
+          let y = e.pageY;
+
+          cursor.style.top = y + "px";
+          cursor.style.left = x + "px";
+          cursor.style.display = "block";
+      });
+
+
+      //courseur hors d'ecran...
+      document.addEventListener("mouseout", () => {
+          cursor.style.display = "none";
+      });
+  </script>
+</body>
+</html>
